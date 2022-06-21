@@ -13,8 +13,8 @@ var a = 5;
 var b = 10;
 var c = function(a, b, c) {
   var x = 10;
-  console.log(x);
-  console.log(a);
+  console.log(x); // 10
+  console.log(a); // 5
   var f = function(a, b, c) {
     b = a;
     console.log(b);
@@ -75,14 +75,14 @@ console.log(pm);
 ¿Cuál crees que será el resultado de la ejecución de estas operaciones?:
 
 ```javascript
-6 / "3"
+6 / "3" // 2
 "2" * "3"
 4 + 5 + "px"
 "$" + 4 + 5
 "4" - 2
 "4px" - 2
 7 / 0
-{}[0]
+{}[0] //
 parseInt("09")
 5 && 2
 2 && 5
