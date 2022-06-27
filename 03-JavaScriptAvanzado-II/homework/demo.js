@@ -103,3 +103,32 @@ function set(clave, valor){ //
 }
 
 
+
+
+
+
+
+function Arbol(value){
+    this.value = value;
+    this.left = null;
+    this.right = null;
+}
+let subArbol = new Arbol(20)
+Arbol.prototype.add = function(valor){
+    if(valor > this.value){
+        if(this.right !== null){
+            this.right.add(valor)
+        }else{
+            this.right = new Arbol(valor)
+        }
+    }
+    if(valor < this.value){
+        if(this.left !== null){
+            this.left.add(valor)
+        }else{
+            this.left = new Arbol(valor)
+        }
+    }
+}
+
+
