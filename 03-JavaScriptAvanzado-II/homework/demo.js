@@ -108,27 +108,59 @@ function set(clave, valor){ //
 
 
 
-function Arbol(value){
-    this.value = value;
-    this.left = null;
-    this.right = null;
-}
-let subArbol = new Arbol(20)
-Arbol.prototype.add = function(valor){
-    if(valor > this.value){
-        if(this.right !== null){
-            this.right.add(valor)
-        }else{
-            this.right = new Arbol(valor)
-        }
-    }
-    if(valor < this.value){
-        if(this.left !== null){
-            this.left.add(valor)
-        }else{
-            this.left = new Arbol(valor)
-        }
-    }
-}
+// function Arbol(value){
+//     this.value = value;
+//     this.left = null;
+//     this.right = null;
+// }
+// let subArbol = new Arbol(20)
+// Arbol.prototype.add = function(valor){
+//     if(valor > this.value){
+//         if(this.right !== null){
+//             this.right.add(valor)
+//         }else{
+//             this.right = new Arbol(valor)
+//         }
+//     }
+//     if(valor < this.value){
+//         if(this.left !== null){
+//             this.left.add(valor)
+//         }else{
+//             this.left = new Arbol(valor)
+//         }
+//     }
+// }
 
 
+	// N pasos -> length array
+// var max = array[0]; // 1
+// for( var i = 0; i <= array.lenght; i++){ // N veces
+// 	if( array[i] > max)	{ // 1 paso
+// 		max = array[i]; // 1 paso
+// 	}
+// }
+// console.log(max); // 1 pasos
+
+// // 1 + N * 2 + 1 ==> 2 + 2N ==> O(N)
+
+	
+// for( var i = 0, i <= array.lenght; i++){ // N veces
+//     for( var j = 0, j <= array.lenght; j++){ // N veces
+//       if(array[i] === array[j]){ // 1 paso
+//         return true; // 1 paso
+//       }
+//      }
+//   };   ///    N * N * 2  ==>  2 * N**N ==> 0(N**2)
+
+  	
+// function sumArray(array, n) {
+//     var fin = array.length - 1;
+//     var ini = 0;
+//     while (ini < fin) {
+//       var suma = array[ini] + array[fin];
+//       if( suma === n) return true;
+//       if( suma > n) fin = fin - 1;
+//       if( suma < n) ini = ini + 1;
+//     }
+//     return false;
+//   };                       ///     O(N)
